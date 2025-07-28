@@ -3,9 +3,9 @@ package db
 import (
 	"database/sql"
 	"fmt"
-	"log"
-	_ "github.com/lib/pq"
 	"github.com/Tommych123/subscription-service/internal/config"
+	_ "github.com/lib/pq"
+	"log"
 )
 
 func NewPostgres(cfg *config.Config) *sql.DB {
