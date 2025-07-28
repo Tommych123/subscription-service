@@ -1,4 +1,4 @@
-module subscription-service
+module github.com/Tommych123/subscription-service
 
 go 1.24.4
 
