@@ -2,11 +2,11 @@ package db
 
 import (
 	"database/sql"
-	"log"
+	"github.com/Tommych123/subscription-service/internal/config"
 	"github.com/golang-migrate/migrate/v4"
 	"github.com/golang-migrate/migrate/v4/database/postgres"
 	_ "github.com/golang-migrate/migrate/v4/source/file"
-	"github.com/Tommych123/subscription-service/internal/config"
+	"log"
 )
 
 func RunMigrations(db *sql.DB, cfg *config.Config) {
