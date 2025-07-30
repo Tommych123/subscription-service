@@ -1,10 +1,10 @@
 package service
 
 import (
-	"time"
 	"github.com/Tommych123/subscription-service/models"
 	"github.com/Tommych123/subscription-service/repository"
 	"go.uber.org/zap"
+	"time"
 )
 
 type SubscriptionService struct {
@@ -98,7 +98,6 @@ func (s *SubscriptionService) GetTotalCost(userID string, serviceName string, fr
 	s.logger.Info("Calculated total cost", zap.String("user_id", userID), zap.String("service_name", serviceName), zap.Time("from", from), zap.Time("to", to), zap.Int("total_cost", total))
 	return total, nil
 }
-
 
 func maxDate(a, b time.Time) time.Time {
 	if a.After(b) {

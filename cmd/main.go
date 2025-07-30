@@ -6,19 +6,19 @@
 package main
 
 import (
-	"os"
-	"github.com/gin-gonic/gin"
-	"github.com/joho/godotenv"
-	"go.uber.org/zap"
-	"github.com/Tommych123/subscription-service/service/config"
-	"github.com/Tommych123/subscription-service/pkg/db"
 	"github.com/Tommych123/subscription-service/api"
+	_ "github.com/Tommych123/subscription-service/internal/docs"
 	"github.com/Tommych123/subscription-service/internal/logger"
+	"github.com/Tommych123/subscription-service/pkg/db"
 	"github.com/Tommych123/subscription-service/repository"
 	"github.com/Tommych123/subscription-service/service"
-	_ "github.com/Tommych123/subscription-service/internal/docs"
-	ginSwagger "github.com/swaggo/gin-swagger"
+	"github.com/Tommych123/subscription-service/service/config"
+	"github.com/gin-gonic/gin"
+	"github.com/joho/godotenv"
 	swaggerFiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
+	"go.uber.org/zap"
+	"os"
 )
 
 func main() {

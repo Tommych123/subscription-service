@@ -1,13 +1,13 @@
 package api
 
 import (
-	"net/http"
-	"time"
+	_ "github.com/Tommych123/subscription-service/internal/docs"
 	"github.com/Tommych123/subscription-service/models"
 	"github.com/Tommych123/subscription-service/service"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
-	_ "github.com/Tommych123/subscription-service/internal/docs"
+	"net/http"
+	"time"
 )
 
 type SubscriptionHandler struct {

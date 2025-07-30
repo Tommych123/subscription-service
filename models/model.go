@@ -81,4 +81,3 @@ type Subscription struct {
 	StartDate   MonthYear  `db:"start_date" json:"start_date" swaggertype:"string"`
 	EndDate     *MonthYear `db:"end_date" json:"end_date" swaggertype:"string"`
 }
-
