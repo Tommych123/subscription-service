@@ -117,11 +117,13 @@ docker-compose up --build
 .
 ├── api/               # HTTP handlers
 ├── cmd/               # main.go entrypoint
-├── internal/          # документация и утилиты
+├── internal/docs      # swagger-документация, логгер и утилиты
+├── internal/logger    # логгер
 ├── models/            # структуры и типы
 ├── pkg/db/            # PostgreSQL и миграции
 ├── repository/        # Работа с БД
 ├── service/           # Бизнес-логика
+├── service/config     # Подключение переменных окружения .env
 ├── deploy/            # Dockerfile, скрипты запуска
 └── migrations/        # SQL-модули миграции
 ```
