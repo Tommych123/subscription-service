@@ -14,8 +14,8 @@ REST-сервис для управления и агрегации данных
 
 Клонируйте репозиторий:
 ```bash
-git clone https://github.com/Tommych123/auth-service.git
-cd auth-service
+git clone https://github.com/Tommych123/subscription-service.git
+cd subscription-service
 ```
 ---
 ### Переменные окружения
