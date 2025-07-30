@@ -10,6 +10,14 @@ REST-сервис для управления и агрегации данных
 
 ## Запуск проекта
 
+### Клонирование репозитория
+
+Клонируйте репозиторий:
+```bash
+git clone https://github.com/Tommych123/auth-service.git
+cd auth-service
+```
+---
 ### Переменные окружения
 
 Необходимо создать файл в корне проекта `.env` по примеру из `deploy/.env-example`:
@@ -26,7 +34,7 @@ SERVER_PORT=8080
 
 ---
 
-### С помощью Docker Compose
+### Сборка с помощью Docker Compose
 
 ```bash
 cd deploy
